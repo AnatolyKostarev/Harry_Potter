@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Garry Potter</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="description">
+        <h1 class="title">Harry Potter</h1>
+        <p class="text">View all characters from the Harry Potter universe</p>
+        <div class="get-info">
+          <div class="get-by-name">
+            <label for="person-name">Name</label>
+            <input
+              class="js-person-name"
+              id="person-name"
+              type="text"
+              placeholder="Hermione"
+            />
+          </div>
+          <div class="get-by-school">
+            <label for="school">School</label>
+            <select
+              name="school"
+              id="school"
+              class="js-school"
+              required
+            ></select>
+          </div>
+        </div>
+        <div class="persons-list js-person-list"></div>
+      </div>
+    </div>
+    <!-- <script src="./js/hp.js"></script> -->
+    <script src="./js/data.js"></script>
+  </body>
+</html>

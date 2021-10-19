@@ -1,0 +1,137 @@
+@import "modern-normalize.css";
+
+body {
+  background: rgba(245, 245, 245, 1);
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  overflow-y: auto;
+}
+
+.description {
+  min-width: 768px;
+  padding: 64px 40px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.text {
+  margin-bottom: 48px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+.get-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.get-by-name label,
+.get-by-school label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 452px;
+  height: 38px;
+  padding-left: 17px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1)
+}
+
+select:required:invalid {
+  color: gray;
+}
+
+select[name="school"] {
+  width: 216px;
+  height: 38px;
+  padding-left: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #000;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+
+.persons-list {
+  padding-top: 41px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border-top: 1px solid rgba(222, 226, 230, 1);
+;
+}
+
+.person-card {
+  width: 334px;
+  background: #fff;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.img img {
+  object-fit: cover;
+}
+
+.person-description {
+  padding: 24px;
+  list-style: none;
+}
+
+.person-title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #152536;
+}
+
+.person-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #152536;
+}
